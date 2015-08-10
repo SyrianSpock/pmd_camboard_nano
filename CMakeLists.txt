@@ -12,7 +12,10 @@ catkin_package(
 )
 
 # Set PMDSDK Requirements
-set(PMDSDK_ROOT_DIR ${PROJECT_SOURCE_DIR}/PMDSDK) # Change this if the path is different
+set(PMDSDK_ROOT_DIR /usr/local/share/pmd) # Change this if the path is different
+set(PMDSDK_LIBRARIES /usr/local/share/pmdsdk/bin)
+set(PMDSDK_INCLUDE_DIR /usr/local/share/pmdsdk/include)
+set(PMDSDK_PLUGIN_DIR /usr/local/share/pmdsdk/bin)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
 find_package(PMDSDK REQUIRED)
